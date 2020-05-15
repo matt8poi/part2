@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({ text }) => <div><h1>{text}</h1></div>
+const Header = ({ text }) => <div><h3>{text}</h3></div>
 
 const Content = ({ parts }) => {
     const total = parts.reduce((s,p) => (s + p.exercises),0)
@@ -17,7 +17,7 @@ const Content = ({ parts }) => {
 
 const Part = ({ name, exercises }) => <div><p>{name} {exercises}</p></div>
 
-const Total = ({ total }) => <div>total of {total} exercises</div>
+const Total = ({ total }) => <div><b>total of {total} exercises</b></div>
 
 const Course = ({ course }) => {
     return (
